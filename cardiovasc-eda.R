@@ -7,7 +7,15 @@ library(grid)
 library(plotly)
 library(ggpubr)
 library(GGally)
+library(naniar)
 
+#Load in the data
+final_data <- read.csv("final_data.csv")
+#Evaluate the missing values
+vis_miss(final_data[,2:7])
+
+#Check our data 
+summary(final_data)
 # Create a Scatterplot matrix
 #Group the data over all years and find means
 grouped_rates <- final_data %>%  
@@ -45,6 +53,7 @@ plot3 <-ggplot( rich_countries,
 
 
 figure<-ggarrange(plot1, plot2, plot3, nrow=3,common.legend = TRUE,legend="right")
+figure<-grid.arrange(plot1, plot2, plot3, nrow=3, widths=10, heights=7)
 
 annotate_figure(figure,
                 top = text_grob("Time Series for Top 10 Wealthiest Countries", color = "black", size = 20))
@@ -184,3 +193,4 @@ figure3<-ggarrange(fig1, fig2, fig3, fig4, nrow=4,common.legend = TRUE,legend="r
 #Add title
 annotate_figure(figure3,
                 top = text_grob("Time Series of Correlation between Cardiovascular Disease and Explanatory Variables", color = "black", size = 16))
+

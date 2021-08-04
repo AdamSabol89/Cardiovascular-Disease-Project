@@ -64,5 +64,7 @@ final_data$GINI %>%
 final_data$GINI <- NULL 
 
 #Save our progress
+final_data$Code.x <- NULL
+final_data$Code.y <- NULL 
 final_data %>% 
-  write.csv("final_data.csv")
+  write.csv("final_data.csv", row.names = FALSE)

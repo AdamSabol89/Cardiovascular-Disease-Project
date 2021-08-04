@@ -22,7 +22,7 @@ library(naniar)
 final_data <- read.csv("final_data.csv")
 ```
 ### Missing Values and Summary Statistics 
-This was briefly covered in the data-cleaning script, but we need to check our variables for missing data. The package naniar provides some useful pre-built image visualizations of this one of which is applied below. We see that the only variable with missing data is Gdp_Per_Capita, with only roughly 7% of observations missing. This should not be an issue as most recommendations for dropping a variable in an analysis advise only dropping at cutoffs of either .5 or .9.
+This was briefly covered in the data-cleaning script, but we need to check our variables for missing data. The package naniar provides some useful pre-built image visualizations of this one of which is applied below. We see that the only variable with missing data is Gdp_Per_Capita, with only roughly 7% of observations missing. This should not be an issue as most recommendations for dropping a variable in an analysis advise only dropping at cutoffs of either .5 or .9. In the modeling notebook we will interpolate missing values for countries with any GDP_Per_Capita data and omit countries with no values. For now we will include all observations in the dataset. 
 ```{r, fig.width=10, fig.height=7}
 vis_miss(final_data[,2:7])
 ```
@@ -203,4 +203,4 @@ figure3 <-annotate_figure(figure3,
 ```{r, fig.width=11, fig.height=8,fig.align = 'center'}
 figure3
 ```
-Thea above lot shows that most of the relationships appear to be consistent over time, however most noticeably mean_bmi among high income groups does appear to be time variant. This is something which we will need to take account in our modeling. The next notebook in this repository will cover modeling. 
+The above plot shows that most of the relationships appear to be consistent over time, however mean_bmi among high income groups does appear to be time variant. This is something which we will need to take account in our modeling. The next notebook in this repository will cover modeling for this dataset. 
