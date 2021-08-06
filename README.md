@@ -24,7 +24,12 @@
 <p align="center">
   <img src="https://github.com/AdamSabol89/Cardiovascular-Disease-Project/blob/main/figures/correlations_over_time.png">
 </p>
-### Model Building 
--
--
--
+
+### [Model Building](https://rpubs.com/AdamSabol89/796262)
+<p align="center">
+  <img src="https://github.com/AdamSabol89/Cardiovascular-Disease-Project/blob/main/figures/download.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/AdamSabol89/Cardiovascular-Disease-Project/blob/main/figures/model_errors.png">
+</p>
