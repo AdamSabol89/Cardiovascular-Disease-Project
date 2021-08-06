@@ -10,3 +10,14 @@
 - My [RPubs](https://rpubs.com/AdamSabol89) account. 
 ### Data Sourcing and Cleaning 
 - 
+-
+-
+-
+### Exploratory Data Analysis 
+-
+-
+-
+### Model Building 
+-
+-
+-
