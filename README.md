@@ -26,6 +26,10 @@
 </p>
 
 ### [Model Building](https://rpubs.com/AdamSabol89/796262)
+- For a thorough explanation of the models and cross-validation methods used in this project I highly recommend consulting the Rmd-notebook; hosted on RPubs and linked above.
+- Three linear models were used in this notebook, two fixed effect, and one mixed effect. 
+- All models include fixed effects for year, the first model is a simple fixed effects mode, the second a fixed effect model with a log-tranformed response, and the third is a mixed effects model with random effects for mean_bmi by country. 
+- Provided below is the predicted vs. actual plot for the mixed effect model with raw residuals, the final image is a depiction of the test error for all three models. 
 <p align="center">
   <img src="https://github.com/AdamSabol89/Cardiovascular-Disease-Project/blob/main/figures/download.png">
 </p>
