@@ -14,7 +14,7 @@
 - Data was filtered to ensure no missing year data, variable and country names were cleaned.
 - Data was merged using a combination of inner and outer joins with a resultant clean dataset containing all features. 
 ### [Exploratory Data Analysis](https://rpubs.com/AdamSabol89/776735)
-- For a thorough investigation of the created dataset I highly recommend consulting the Rmd-notebook, hosted on RPubs, and linked above, provided below are a few sample images.
+- For a thorough investigation of the created dataset I highly recommend consulting the Rmd-notebook, hosted on RPubs and linked above, provided below are a few sample images.
 <p align="center">
   <img src="https://github.com/AdamSabol89/Cardiovascular-Disease-Project/blob/main/figures/scatter_year.png">
 </p>
